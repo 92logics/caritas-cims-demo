@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIMS & ODSF platform prototype · demo by 92 Logics</title>
+<meta name="description" content="Working prototype of a management-standards assessment and small-grants platform (self-assessment, external assessment, Improvement Plans, ODSF, dashboards, EN/FR/ES, offline). Demo by 92 Logics with fictional data; not an official Caritas Internationalis system.">
+<meta name="theme-color" content="#123a5c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23123a5c'/><text x='16' y='22' font-size='14' text-anchor='middle' fill='white' font-family='sans-serif'>92</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="banner" id="t-banner"></div>
+<header class="top">
+  <div class="brand"><div class="mark" aria-hidden="true">92</div><div><p class="eyebrow">92 Logics · prototype</p><h1 id="t-title"></h1><p class="lede" id="t-lede"></p></div></div>
+  <div class="controls">
+    <label><span id="lbl-role"></span><select id="sel-role"></select></label>
+    <label><span id="lbl-lang"></span><select id="sel-lang"><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option></select></label>
+    <span id="net" class="net" role="status" aria-live="polite"></span>
+    <button id="btn-reset" class="btn secondary sm"></button>
+  </div>
+</header>
+<p class="guide-line" id="t-guide"></p>
+<nav id="nav" class="nav" aria-label="Main"></nav>
+<main id="main" class="wrap" tabindex="-1"></main>
+<footer class="foot">Demo by <b>92 Logics</b> · fictional sample data · not an official Caritas Internationalis system and no affiliation implied · data stays in this browser (localStorage) · <a href="https://github.com/92logics/caritas-cims-demo">source</a></footer>
+<div id="modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" id="modal-body"></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
